@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                padding: 2%;
+            }
+            body{
+                text-align: center;
+                background-color: lightcoral;
+                font-family: cursive; 
+                color: rgb(9, 58, 58);
+            }
+            button{
+                background-color: lightcoral;
+                font-family: cursive;
+                color: rgb(9, 58, 58);
+                border-radius: 15%;
+                border-color: antiquewhite;
+                
+            }
+            select{
+                background-color: lightcoral;
+                font-family: cursive;
+                color: rgb(9, 58, 58);
+                border-radius: 20%;
+                border-color: antiquewhite;
+            }
+            option{
+                font-family: cursive;
+                background-color: cornsilk;
+                color: rgb(9, 58, 58);
+                border-radius: 10%;
+            }
+            button:hover{
+                background-color: navajowhite;
+                border: none;
+                border-radius: 18%;
+            }
+            input{
+                width: 8%;
+            }
+            #showMatris{
+                background-color: blanchedalmond;
+                width: initial;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+            .setNumbers{
+                margin: 0.5%;
+                width: 4%;
+            }
+            .setNumbers::placeholder{
+                font-family: cursive;
+                color: rgb(206, 201, 201);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>determinant</h1>
+        <form id="form1">
+             <input type="text" id="input2" placeholder="enter length..." required>
+            <select id="selectWay">
+                <option value="random">random</option>
+                <option value="manually">manually</option>
+            </select>
+            <button type="submit" id="submitButton">submit</button>
+        </form>
+        <div id="showMatris"></div>
+        <script src="determinant.js"></script>
+    </body>
+</html>
